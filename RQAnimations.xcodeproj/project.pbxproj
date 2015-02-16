@@ -10,6 +10,8 @@
 		943EC5B11A916E2E007FEE5E /* RQAnimations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 943EC5B01A916E2E007FEE5E /* RQAnimations.h */; };
 		943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 943EC5B21A916E2E007FEE5E /* RQAnimations.m */; };
 		943EC5B91A916E2E007FEE5E /* libRQAnimations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */; };
+		948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */; };
+		948346D21A930F1000C3F186 /* RQAnimationsMaterializeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,10 @@
 		943EC5B21A916E2E007FEE5E /* RQAnimations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQAnimations.m; sourceTree = "<group>"; };
 		943EC5B81A916E2E007FEE5E /* RQAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RQAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		943EC5BE1A916E2E007FEE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948346CD1A930CF300C3F186 /* NSMutableAttributedString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Utility.h"; path = "Helpers/Categories/NSMutableAttributedString+Utility.h"; sourceTree = "<group>"; };
+		948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+Utility.m"; path = "Helpers/Categories/NSMutableAttributedString+Utility.m"; sourceTree = "<group>"; };
+		948346D01A930F1000C3F186 /* RQAnimationsMaterializeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQAnimationsMaterializeLabel.h; path = Text/RQAnimationsMaterializeLabel.h; sourceTree = "<group>"; };
+		948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQAnimationsMaterializeLabel.m; path = Text/RQAnimationsMaterializeLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		943EC5AF1A916E2E007FEE5E /* RQAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				943EC5FD1A9176D0007FEE5E /* Helpers */,
+				943EC5F91A91754E007FEE5E /* Text */,
 				943EC5B01A916E2E007FEE5E /* RQAnimations.h */,
 				943EC5B21A916E2E007FEE5E /* RQAnimations.m */,
 			);
@@ -103,6 +111,32 @@
 				943EC5BE1A916E2E007FEE5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		943EC5F91A91754E007FEE5E /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				948346D01A930F1000C3F186 /* RQAnimationsMaterializeLabel.h */,
+				948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		943EC5FD1A9176D0007FEE5E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				943EC5FE1A9176DA007FEE5E /* Categories */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		943EC5FE1A9176DA007FEE5E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				948346CD1A930CF300C3F186 /* NSMutableAttributedString+Utility.h */,
+				948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +183,7 @@
 		943EC5A51A916E2E007FEE5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = RQ;
+				CLASSPREFIX = RQAnimations;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Ryan Quan";
 				TargetAttributes = {
@@ -195,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */,
+				948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */,
+				948346D21A930F1000C3F186 /* RQAnimationsMaterializeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +393,7 @@
 				943EC5C31A916E2E007FEE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		943EC5C41A916E2E007FEE5E /* Build configuration list for PBXNativeTarget "RQAnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +402,7 @@
 				943EC5C61A916E2E007FEE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
