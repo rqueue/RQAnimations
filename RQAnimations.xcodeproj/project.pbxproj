@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		943EC5B11A916E2E007FEE5E /* RQAnimations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 943EC5B01A916E2E007FEE5E /* RQAnimations.h */; };
+		943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 943EC5B21A916E2E007FEE5E /* RQAnimations.m */; };
+		943EC5B91A916E2E007FEE5E /* libRQAnimations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		943EC5BA1A916E2E007FEE5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 943EC5A51A916E2E007FEE5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 943EC5AC1A916E2E007FEE5E;
+			remoteInfo = RQAnimations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		943EC5AB1A916E2E007FEE5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				943EC5B11A916E2E007FEE5E /* RQAnimations.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRQAnimations.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		943EC5B01A916E2E007FEE5E /* RQAnimations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQAnimations.h; sourceTree = "<group>"; };
+		943EC5B21A916E2E007FEE5E /* RQAnimations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQAnimations.m; sourceTree = "<group>"; };
+		943EC5B81A916E2E007FEE5E /* RQAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RQAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		943EC5BE1A916E2E007FEE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		943EC5AA1A916E2E007FEE5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943EC5B51A916E2E007FEE5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943EC5B91A916E2E007FEE5E /* libRQAnimations.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		943EC5A41A916E2E007FEE5E = {
+			isa = PBXGroup;
+			children = (
+				943EC5AF1A916E2E007FEE5E /* RQAnimations */,
+				943EC5BC1A916E2E007FEE5E /* RQAnimationsTests */,
+				943EC5AE1A916E2E007FEE5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		943EC5AE1A916E2E007FEE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */,
+				943EC5B81A916E2E007FEE5E /* RQAnimationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		943EC5AF1A916E2E007FEE5E /* RQAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				943EC5B01A916E2E007FEE5E /* RQAnimations.h */,
+				943EC5B21A916E2E007FEE5E /* RQAnimations.m */,
+			);
+			path = RQAnimations;
+			sourceTree = "<group>";
+		};
+		943EC5BC1A916E2E007FEE5E /* RQAnimationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				943EC5BD1A916E2E007FEE5E /* Supporting Files */,
+			);
+			path = RQAnimationsTests;
+			sourceTree = "<group>";
+		};
+		943EC5BD1A916E2E007FEE5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				943EC5BE1A916E2E007FEE5E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		943EC5AC1A916E2E007FEE5E /* RQAnimations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943EC5C11A916E2E007FEE5E /* Build configuration list for PBXNativeTarget "RQAnimations" */;
+			buildPhases = (
+				943EC5A91A916E2E007FEE5E /* Sources */,
+				943EC5AA1A916E2E007FEE5E /* Frameworks */,
+				943EC5AB1A916E2E007FEE5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RQAnimations;
+			productName = RQAnimations;
+			productReference = 943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		943EC5B71A916E2E007FEE5E /* RQAnimationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943EC5C41A916E2E007FEE5E /* Build configuration list for PBXNativeTarget "RQAnimationsTests" */;
+			buildPhases = (
+				943EC5B41A916E2E007FEE5E /* Sources */,
+				943EC5B51A916E2E007FEE5E /* Frameworks */,
+				943EC5B61A916E2E007FEE5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				943EC5BB1A916E2E007FEE5E /* PBXTargetDependency */,
+			);
+			name = RQAnimationsTests;
+			productName = RQAnimationsTests;
+			productReference = 943EC5B81A916E2E007FEE5E /* RQAnimationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		943EC5A51A916E2E007FEE5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ryan Quan";
+				TargetAttributes = {
+					943EC5AC1A916E2E007FEE5E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					943EC5B71A916E2E007FEE5E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 943EC5A81A916E2E007FEE5E /* Build configuration list for PBXProject "RQAnimations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 943EC5A41A916E2E007FEE5E;
+			productRefGroup = 943EC5AE1A916E2E007FEE5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				943EC5AC1A916E2E007FEE5E /* RQAnimations */,
+				943EC5B71A916E2E007FEE5E /* RQAnimationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		943EC5B61A916E2E007FEE5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		943EC5A91A916E2E007FEE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943EC5B41A916E2E007FEE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		943EC5BB1A916E2E007FEE5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 943EC5AC1A916E2E007FEE5E /* RQAnimations */;
+			targetProxy = 943EC5BA1A916E2E007FEE5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		943EC5BF1A916E2E007FEE5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		943EC5C01A916E2E007FEE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		943EC5C21A916E2E007FEE5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		943EC5C31A916E2E007FEE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		943EC5C51A916E2E007FEE5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RQAnimationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		943EC5C61A916E2E007FEE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RQAnimationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		943EC5A81A916E2E007FEE5E /* Build configuration list for PBXProject "RQAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943EC5BF1A916E2E007FEE5E /* Debug */,
+				943EC5C01A916E2E007FEE5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943EC5C11A916E2E007FEE5E /* Build configuration list for PBXNativeTarget "RQAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943EC5C21A916E2E007FEE5E /* Debug */,
+				943EC5C31A916E2E007FEE5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		943EC5C41A916E2E007FEE5E /* Build configuration list for PBXNativeTarget "RQAnimationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943EC5C51A916E2E007FEE5E /* Debug */,
+				943EC5C61A916E2E007FEE5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 943EC5A51A916E2E007FEE5E /* Project object */;
+}
