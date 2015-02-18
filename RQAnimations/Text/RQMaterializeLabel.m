@@ -8,6 +8,7 @@
 @property (nonatomic) NSArray *characterDelays;
 @property (nonatomic) CFTimeInterval animationStartTime;
 @property (nonatomic) BOOL fadeIn;
+@property (nonatomic, copy) void(^completionBlock)();
 
 @end
 
@@ -54,27 +55,30 @@
 
 #pragma mark - Public
 
-- (void)hideTextWithAnimation:(BOOL)animated {
-    if (animated) {
-        self.fadeIn = NO;
-        self.animationStartTime = CACurrentMediaTime();
-        self.displayLink.paused = NO;
-    } else {
-        [super setAttributedText:nil];
-    }
+- (void)hideTextWithAnimation:(BOOL)animated completion:(void (^)())completion {
+    [self updateTextWithText:nil animated:animated fadeIn:NO completion:completion];
 }
 
-- (void)showTextWithAnimation:(BOOL)animated {
-    if (animated) {
-        self.fadeIn = YES;
-        self.animationStartTime = CACurrentMediaTime();
-        self.displayLink.paused = NO;
-    } else {
-        [super setAttributedText:self.originalText];
-    }
+- (void)showTextWithAnimation:(BOOL)animated completion:(void (^)())completion {
+    [self updateTextWithText:self.originalText animated:animated fadeIn:YES completion:completion];
 }
 
 #pragma mark - Internal Helpers
+
+- (void)updateTextWithText:(NSAttributedString *)text animated:(BOOL)animated fadeIn:(BOOL)fadeIn completion:(void (^)())completion {
+    self.completionBlock = completion;
+
+    if (animated) {
+        self.fadeIn = fadeIn;
+        self.animationStartTime = CACurrentMediaTime();
+        self.displayLink.paused = NO;
+    } else {
+        [super setAttributedText:text];
+        if (self.completionBlock) {
+            self.completionBlock();
+        }
+    }
+}
 
 - (void)updateCharacterDelays {
     CGFloat maxDelay = self.animationDuration * self.maxDelay;
@@ -91,6 +95,10 @@
     if (delta >= self.animationDuration) {
         self.attributedText = self.originalText;
         self.displayLink.paused = YES;
+        if (self.completionBlock) {
+            self.completionBlock();
+        }
+        return;
     }
     NSMutableAttributedString *mutableAttributedText = [self.originalText mutableCopy];
     [mutableAttributedText modifyEachCharacterAttribute:^(NSUInteger characterIndex, NSMutableDictionary *mutableAttributes) {

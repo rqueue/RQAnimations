@@ -14,7 +14,7 @@
 */
 @property (nonatomic) CGFloat maxDelay;
 
-- (void)hideTextWithAnimation:(BOOL)animated;
-- (void)showTextWithAnimation:(BOOL)animated;
+- (void)hideTextWithAnimation:(BOOL)animated completion:(void(^)())completion;
+- (void)showTextWithAnimation:(BOOL)animated completion:(void(^)())completion;
 
 @end
