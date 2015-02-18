@@ -11,7 +11,7 @@
 		943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 943EC5B21A916E2E007FEE5E /* RQAnimations.m */; };
 		943EC5B91A916E2E007FEE5E /* libRQAnimations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */; };
 		948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */; };
-		948346D21A930F1000C3F186 /* RQAnimationsMaterializeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */; };
+		948346D21A930F1000C3F186 /* RQMaterializeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346D11A930F1000C3F186 /* RQMaterializeLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		943EC5BE1A916E2E007FEE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948346CD1A930CF300C3F186 /* NSMutableAttributedString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Utility.h"; path = "Helpers/Categories/NSMutableAttributedString+Utility.h"; sourceTree = "<group>"; };
 		948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+Utility.m"; path = "Helpers/Categories/NSMutableAttributedString+Utility.m"; sourceTree = "<group>"; };
-		948346D01A930F1000C3F186 /* RQAnimationsMaterializeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQAnimationsMaterializeLabel.h; path = Text/RQAnimationsMaterializeLabel.h; sourceTree = "<group>"; };
-		948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQAnimationsMaterializeLabel.m; path = Text/RQAnimationsMaterializeLabel.m; sourceTree = "<group>"; };
+		948346D01A930F1000C3F186 /* RQMaterializeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQMaterializeLabel.h; path = Text/RQMaterializeLabel.h; sourceTree = "<group>"; };
+		948346D11A930F1000C3F186 /* RQMaterializeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQMaterializeLabel.m; path = Text/RQMaterializeLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 		943EC5F91A91754E007FEE5E /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				948346D01A930F1000C3F186 /* RQAnimationsMaterializeLabel.h */,
-				948346D11A930F1000C3F186 /* RQAnimationsMaterializeLabel.m */,
+				948346D01A930F1000C3F186 /* RQMaterializeLabel.h */,
+				948346D11A930F1000C3F186 /* RQMaterializeLabel.m */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 		943EC5A51A916E2E007FEE5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = RQAnimations;
+				CLASSPREFIX = RQ;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Ryan Quan";
 				TargetAttributes = {
@@ -230,7 +230,7 @@
 			files = (
 				943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */,
 				948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */,
-				948346D21A930F1000C3F186 /* RQAnimationsMaterializeLabel.m in Sources */,
+				948346D21A930F1000C3F186 /* RQMaterializeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

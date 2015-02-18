@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface RQAnimationsMaterializeLabel : UILabel
+@interface RQMaterializeLabel : UILabel
 
 /*
  Animation duration in seconds.

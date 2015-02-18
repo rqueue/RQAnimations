@@ -1,7 +1,7 @@
-#import "RQAnimationsMaterializeLabel.h"
+#import "RQMaterializeLabel.h"
 #import "NSMutableAttributedString+Utility.h"
 
-@interface RQAnimationsMaterializeLabel()
+@interface RQMaterializeLabel()
 
 @property (nonatomic) NSAttributedString *originalText;
 @property (nonatomic) CADisplayLink *displayLink;
@@ -10,7 +10,7 @@
 
 @end
 
-@implementation RQAnimationsMaterializeLabel
+@implementation RQMaterializeLabel
 
 #pragma mark - Initialization
 

@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "RQAnimationsMaterializeLabel.h"
+#import "RQMaterializeLabel.h"
 
 @interface RQAnimations : NSObject
 
