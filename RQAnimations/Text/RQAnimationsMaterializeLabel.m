@@ -45,6 +45,7 @@
 
 - (void)setUp {
     self.animationDuration = 2.5;
+    self.maxDelay = 1.0;
     self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateAttributedDisplayTextForDisplayLink)];
     [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     self.displayLink.paused = YES;
@@ -68,7 +69,7 @@
 #pragma mark - Internal Helpers
 
 - (void)updateCharacterDelays {
-    CGFloat maxDelay = self.animationDuration / 2.0;
+    CGFloat maxDelay = self.animationDuration * self.maxDelay;
     NSMutableArray *mutableCharacterDelays = [NSMutableArray array];
     for (NSUInteger i = 0; i < [[self.attributedText string] length]; i++) {
         CGFloat normalizedRandomNumber = arc4random_uniform(10000) / 10000.0;
@@ -107,6 +108,12 @@
 
 - (void)setAnimationDuration:(CGFloat)animationDuration {
     _animationDuration = animationDuration;
+
+    [self updateCharacterDelays];
+}
+
+- (void)setMaxDelay:(CGFloat)maxDelay {
+    _maxDelay = maxDelay;
 
     [self updateCharacterDelays];
 }
