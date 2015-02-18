@@ -7,6 +7,7 @@
 @property (nonatomic) CADisplayLink *displayLink;
 @property (nonatomic) NSArray *characterDelays;
 @property (nonatomic) CFTimeInterval animationStartTime;
+@property (nonatomic) BOOL fadeIn;
 
 @end
 
@@ -53,12 +54,19 @@
 
 #pragma mark - Public
 
-- (void)hideText {
-    [super setAttributedText:nil];
+- (void)hideTextWithAnimation:(BOOL)animated {
+    if (animated) {
+        self.fadeIn = NO;
+        self.animationStartTime = CACurrentMediaTime();
+        self.displayLink.paused = NO;
+    } else {
+        [super setAttributedText:nil];
+    }
 }
 
 - (void)showTextWithAnimation:(BOOL)animated {
     if (animated) {
+        self.fadeIn = YES;
         self.animationStartTime = CACurrentMediaTime();
         self.displayLink.paused = NO;
     } else {
@@ -87,9 +95,11 @@
     NSMutableAttributedString *mutableAttributedText = [self.originalText mutableCopy];
     [mutableAttributedText modifyEachCharacterAttribute:^(NSUInteger characterIndex, NSMutableDictionary *mutableAttributes) {
         CGFloat characterDelay = [self.characterDelays[characterIndex] floatValue];
-        CGFloat characterAnimationDuration = self.animationDuration - characterDelay;
-        CGFloat alpha = (delta - characterDelay) / characterAnimationDuration;
-        alpha = MAX(0.0, alpha);
+        CGFloat characterAnimationDurationTotal = self.fadeIn ? self.animationDuration - characterDelay : characterDelay;
+        CGFloat characterAnimationDurationElapsed = self.fadeIn ? delta - characterDelay : delta;
+        CGFloat alpha = characterAnimationDurationElapsed / characterAnimationDurationTotal;
+        alpha = MIN(MAX(0.0, alpha), 1.0);
+        alpha = self.fadeIn ? alpha : 1.0 - alpha;
 
         UIColor *color = mutableAttributes[NSForegroundColorAttributeName];
         mutableAttributes[NSForegroundColorAttributeName] = [color colorWithAlphaComponent:alpha];
