@@ -69,6 +69,8 @@
     self.completionBlock = completion;
 
     if (animated) {
+        NSString *startingText = fadeIn ? nil : self.originalText;
+        [super setAttributedText:startingText];
         self.fadeIn = fadeIn;
         self.animationStartTime = CACurrentMediaTime();
         self.displayLink.paused = NO;
