@@ -12,6 +12,7 @@
 		943EC5B91A916E2E007FEE5E /* libRQAnimations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 943EC5AD1A916E2E007FEE5E /* libRQAnimations.a */; };
 		948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */; };
 		948346D21A930F1000C3F186 /* RQMaterializeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 948346D11A930F1000C3F186 /* RQMaterializeLabel.m */; };
+		94A499D91A96F4F3009B2B9A /* RQAnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A499D81A96F4F3009B2B9A /* RQAnimationLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		948346CE1A930CF300C3F186 /* NSMutableAttributedString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+Utility.m"; path = "Helpers/Categories/NSMutableAttributedString+Utility.m"; sourceTree = "<group>"; };
 		948346D01A930F1000C3F186 /* RQMaterializeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQMaterializeLabel.h; path = Text/RQMaterializeLabel.h; sourceTree = "<group>"; };
 		948346D11A930F1000C3F186 /* RQMaterializeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQMaterializeLabel.m; path = Text/RQMaterializeLabel.m; sourceTree = "<group>"; };
+		94A499D71A96F4F3009B2B9A /* RQAnimationLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQAnimationLabel.h; path = Text/RQAnimationLabel.h; sourceTree = "<group>"; };
+		94A499D81A96F4F3009B2B9A /* RQAnimationLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQAnimationLabel.m; path = Text/RQAnimationLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				948346D01A930F1000C3F186 /* RQMaterializeLabel.h */,
 				948346D11A930F1000C3F186 /* RQMaterializeLabel.m */,
+				94A499D71A96F4F3009B2B9A /* RQAnimationLabel.h */,
+				94A499D81A96F4F3009B2B9A /* RQAnimationLabel.m */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A499D91A96F4F3009B2B9A /* RQAnimationLabel.m in Sources */,
 				943EC5B31A916E2E007FEE5E /* RQAnimations.m in Sources */,
 				948346CF1A930CF300C3F186 /* NSMutableAttributedString+Utility.m in Sources */,
 				948346D21A930F1000C3F186 /* RQMaterializeLabel.m in Sources */,
