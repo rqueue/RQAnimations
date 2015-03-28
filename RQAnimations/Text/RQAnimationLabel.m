@@ -50,7 +50,7 @@
 - (void)initialize {
     self.animationDuration = 2.5;
     self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateAttributedDisplayTextForDisplayLink)];
-    [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     self.displayLink.paused = YES;
     [self setUp];
 }

@@ -13,7 +13,6 @@
 
 - (void)setUp {
     self.maxAnimatingCharacters = 10.0;
-    [self setUpAnimation];
 }
 
 #pragma mark - Public
@@ -51,6 +50,13 @@
             mutableAttributes[NSForegroundColorAttributeName] = [color colorWithAlphaComponent:alpha];
         }];
     }];
+}
+
+#pragma mark - Getters & Setters
+
+- (void)setMaxAnimatingCharacters:(NSUInteger)maxAnimatingCharacters {
+    _maxAnimatingCharacters = maxAnimatingCharacters;
+    [self setUpAnimation];
 }
 
 @end

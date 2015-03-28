@@ -13,7 +13,6 @@
 
 - (void)setUp {
     self.maxDelay = 1.0;
-    [self setUpAnimation];
 }
 
 #pragma mark - Public
@@ -52,6 +51,13 @@
             mutableAttributes[NSForegroundColorAttributeName] = [color colorWithAlphaComponent:alpha];
         }];
     }];
+}
+
+#pragma mark - Getters & Setters
+
+- (void)setMaxDelay:(CGFloat)maxDelay {
+    _maxDelay = maxDelay;
+    [self setUpAnimation];
 }
 
 @end
